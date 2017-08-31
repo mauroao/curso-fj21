@@ -8,11 +8,17 @@
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-<fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="br.com.caelum.dao.ContatoDao"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="br.com.caelum.modelo.Contato"/>
 <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="br.com.caelum.agenda.modelo.Contato"/>
+<fullyQualifiedTypeName name="br.com.caelum.agenda.dao.ContatoDao"/>
 </qualifiedTypeNameHistroy>
