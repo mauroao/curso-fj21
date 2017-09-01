@@ -47,7 +47,7 @@
 						<input type="text" name="dataNascimento" placeholder="Data Nascimento" />
 						-->
 						
-						<caelum:campoData id="dataNascimento" />
+						<caelum:campoData id="dataNascimento" placeholder="Data Nascimento" />
 						
 						</div>
 					</div>
