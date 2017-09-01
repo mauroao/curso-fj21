@@ -17,8 +17,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="span-12">
-			
-				<h2>Adiciona contatos</h2>
+				<c:import url="cabecalho.jsp" />
+				<h3>Adiciona contatos</h3>
 				<hr />
 				<form class="form-horizontal" method="post" action="adicionaContato">
 				
@@ -60,7 +60,9 @@
 					
 					
 				</form>			
-			
+				<p>
+					<a href="lista-contatos.jsp">lista de contatos</a>
+				</p>			
 			</div>
 		</div>	
 	</div>

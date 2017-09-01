@@ -17,7 +17,7 @@
 		<div class="row">
 			<div class="span-12">
 				<c:import url="cabecalho.jsp" />
-
+				<h3>Lista de contatos</h3>
 				<table class="table table-striped table-bordered">
 					<thead>
 						<th>Nome</th>
@@ -46,6 +46,9 @@
 					</tbody>
 			
 				</table>				
+				<p>
+					<a href="adiciona-contato.jsp">adicionar contato</a>
+				</p>
 				
 			</div>
 		</div>
