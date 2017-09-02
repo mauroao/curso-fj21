@@ -24,6 +24,7 @@
 						<th>E-mail</th>
 						<th>Endereco</th>
 						<th>Data Nascimento</th>
+						<th>.</th>
 					</thead>
 					<tbody>
 					<c:forEach var="contato" items="${dao.lista}">
@@ -40,6 +41,9 @@
 							<td>${contato.endereco}</td>
 							<td> 
 								<fmt:formatDate value="${contato.dataNascimento.time}" pattern="dd/MM/yyy" /> 
+							</td>
+							<td>
+								<a class="btn btn-danger" href="mvc?logica=RemoveContatoLogic&id=${contato.id }" >Remover</a>
 							</td>
 						</tr>
 					</c:forEach>		
