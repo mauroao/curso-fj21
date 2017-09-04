@@ -1,3 +1,7 @@
 .metadata
 .metadata/
 .metadata/**
+.recommenders
+.recommenders/
+.recommenders/**
+
