@@ -11,7 +11,7 @@
  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"> 
 </head>
 <body>
-	<jsp:useBean id="dao" class="br.com.caelum.agenda.dao.ContatoDao"/>
+	
 
 	<div class="container">
 		<div class="row">
@@ -27,7 +27,7 @@
 						<th>.</th>
 					</thead>
 					<tbody>
-					<c:forEach var="contato" items="${dao.lista}">
+					<c:forEach var="contato" items="${contatos}">
 						<tr>
 							<td>${contato.nome}</td>
 							<td>

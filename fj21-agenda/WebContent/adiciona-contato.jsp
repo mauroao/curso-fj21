@@ -61,7 +61,7 @@
 					
 				</form>			
 				<p>
-					<a href="lista-contatos.jsp">lista de contatos</a>
+					<a href="mvc?logica=ListaContatosLogic">lista de contatos</a>
 				</p>			
 			</div>
 		</div>	
