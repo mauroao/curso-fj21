@@ -15,6 +15,7 @@ import br.com.caelum.agenda.modelo.Contato;
 public class ContatoDao {
 	private Connection connection;
 
+	/*
 	public ContatoDao() {
 		try {
 			this.connection = new ConnectionFactory().getConnection();
@@ -22,6 +23,11 @@ public class ContatoDao {
 			throw new RuntimeException(e);
 		}
 	}
+	*/
+	
+	public ContatoDao(Connection connection) {
+		this.connection = connection;
+	}	
 
 	public void adiciona(Contato contato) {
 		try {
