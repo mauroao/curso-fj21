@@ -6,6 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="resources/js/jquery.js" ></script>
 
 <link href="<c:url value="/assets/bootstrap/css/bootstrap.min.css" />" rel="stylesheet">
 <title>Insert title here</title>
@@ -32,14 +33,20 @@
 							<tr>
 								<td>${tarefa.id}</td>
 								<td>${tarefa.descricao}</td>
-								<td>
-									<c:if test="${tarefa.finalizado eq false}">
-										Nao finalizado
-									</c:if>
-									<c:if test="${tarefa.finalizado eq true}">
-										Finalizado
-									</c:if>						
-								</td>
+							
+								<c:if test="${tarefa.finalizado eq false}">
+									<td id="tarefa_${tarefa.id}" >
+										<a href="#" onclick="finalizarAgora(${tarefa.id})">
+											Finalizar agora
+										</a>
+									</td>
+								</c:if>
+								<c:if test="${tarefa.finalizado eq true}">
+									<td>
+									Finalizado
+									</td>
+								</c:if>						
+								
 								<td>
 									<fmt:formatDate value="${tarefa.dataFinalizacao.time}" pattern="dd/MM/yyyy"/>
 								</td>
@@ -56,6 +63,14 @@
 			</div>
 		</div>
 	</div>
+	
+	<script>
+		function finalizarAgora(id) {
+			$.post('finalizaTarefa', {'id': id}, function(){
+				$('#tarefa_'+id).html('Finalizado');
+			});
+		}
+	</script>
 
 
 </body>
