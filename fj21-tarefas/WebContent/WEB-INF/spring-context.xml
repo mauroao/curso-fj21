@@ -25,5 +25,9 @@
 	<mvc:resources mapping="/assets/**" location="/assets/" />
 	
 	<mvc:default-servlet-handler/>
+	
+	<mvc:interceptors>
+		<bean class="br.com.caelum.tarefas.interceptor.AutorizadorInterceptor" />	
+	</mvc:interceptors>
 
 </beans>
