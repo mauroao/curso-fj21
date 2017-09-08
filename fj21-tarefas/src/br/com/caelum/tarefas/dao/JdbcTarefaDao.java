@@ -72,7 +72,7 @@ public class JdbcTarefaDao {
 		try {
 			List<Tarefa> tarefas = new ArrayList<Tarefa>();
 			PreparedStatement stmt = this.connection
-					.prepareStatement("select * from tarefas");
+					.prepareStatement("select * from tarefas order by id desc ");
 
 			ResultSet rs = stmt.executeQuery();
 
